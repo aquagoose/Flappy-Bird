@@ -1,0 +1,27 @@
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.csprojAssemblyReference.cache
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.AssemblyInfoInputs.cache
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.AssemblyInfo.cs
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.csproj.CoreCompileInputs.cache
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Content\Backgrounds\grass pixel].xnb
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Content\Fonts\Arial-24px.xnb
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Content\Sprites\flappybird.xnb
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Content\Sprites\pipe.xnb
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Flappy Bird Rewrite.exe
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Flappy Bird Rewrite.deps.json
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Flappy Bird Rewrite.runtimeconfig.json
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Flappy Bird Rewrite.runtimeconfig.dev.json
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Flappy Bird Rewrite.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Flappy Bird Rewrite.pdb
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.csproj.CopyComplete
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.dll
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.pdb
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.genruntimeconfig.cache
