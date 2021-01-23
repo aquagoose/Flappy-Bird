@@ -10,7 +10,7 @@
     <File>D:/Users/ollie/RiderProjects/Flappy Bird Rewrite/Flappy Bird Rewrite/Content/Sprites/pipe.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
+    <File>Backgrounds/grass.png</File>
     <File xsi:nil="true" />
     <File>Sprites/flappybird.png</File>
     <File xsi:nil="true" />

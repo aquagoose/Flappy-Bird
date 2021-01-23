@@ -1,4 +1,5 @@
 ﻿using System;
+using Flappy_Bird_Rewrite.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -18,10 +19,10 @@ namespace Flappy_Bird_Rewrite.Entities
         public override void Update(GameTime gameTime)
         {
             Rotation = YVelocity * 5; // Make the bird point in the direction it is moving. The value of 5 should be increased later.
+            KeyboardState keyboardState = Keyboard.GetState();
             if (!_isGameOver) // Runs this if the game is not over.
             {
-                XVelocity = 1;
-                KeyboardState keyboardState = Keyboard.GetState();
+                XVelocity = 2;
                 if (keyboardState.IsKeyDown(Keys.Space))
                 {
                     if (!_isSpacePressed)
@@ -32,7 +33,19 @@ namespace Flappy_Bird_Rewrite.Entities
                 }
                 else _isSpacePressed = false;
             }
-            else XVelocity = 0; // Set X velocity to 0, freezing the bird in place, only allowing gravity to work.
+            else
+            {
+                XVelocity = 0;
+                if (keyboardState.IsKeyDown(Keys.Enter))
+                {
+                    EntityManager.DestroyAllOfType(typeof(Pipe));
+                    EntityManager.DestroyAllOfType(typeof(Trigger));
+                    EntityManager.DestroyAllOfType(typeof(Ground));
+                    FlappyBird.Score = 0;
+                    Position = new Vector2(100, 100);
+                    _isGameOver = false;
+                }
+            }
             base.Update(gameTime);
         }
 

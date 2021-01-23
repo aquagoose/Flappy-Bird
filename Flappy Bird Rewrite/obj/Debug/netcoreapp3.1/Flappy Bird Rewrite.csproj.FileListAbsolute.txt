@@ -25,3 +25,4 @@ D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\n
 D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.dll
 D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.pdb
 D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\obj\Debug\netcoreapp3.1\Flappy Bird Rewrite.genruntimeconfig.cache
+D:\Users\ollie\RiderProjects\Flappy Bird Rewrite\Flappy Bird Rewrite\bin\Debug\netcoreapp3.1\Content\Backgrounds\grass.xnb

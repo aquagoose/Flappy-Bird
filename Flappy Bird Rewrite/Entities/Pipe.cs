@@ -8,7 +8,7 @@ namespace Flappy_Bird_Rewrite.Entities
     public class Pipe : Entity
     {
 
-        public Pipe(Vector2 position, Texture2D texture, bool flip = false) : base(position, texture, 1, flip ? 180 : 0)
+        public Pipe(Vector2 position, Texture2D texture, bool flip = false) : base(position, texture, 0.75f, flip ? 180 : 0)
         {
             RigidBodyPhysics = false;
             if (flip) SpriteEffects = SpriteEffects.FlipHorizontally;

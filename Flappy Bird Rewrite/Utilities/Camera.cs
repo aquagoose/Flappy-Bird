@@ -11,7 +11,8 @@ namespace Flappy_Bird_Rewrite.Utilities
         public float Rotation = 0f;
 
         public Vector2 Origin =>
-            new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight) / 2;
+            //new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight) / 2;
+            new Vector2(FlappyBird.Player.Position.X, FlappyBird.Player.Position.Y);
         
         public Camera(Vector2 position, GraphicsDeviceManager graphics) // Create the camera, with the graphics. Without the graphics, game no work, graphic good, we need graphic
         {
@@ -21,6 +22,7 @@ namespace Flappy_Bird_Rewrite.Utilities
 
         public Matrix GetViewMatrix(float z = 0f)
         {
+            //Zoom += 0.001f;
             return Matrix.CreateTranslation(new Vector3(-Position, z)) *
                    Matrix.CreateTranslation(new Vector3(-Origin, z)) *
                    Matrix.CreateScale(Zoom, Zoom, 1) *

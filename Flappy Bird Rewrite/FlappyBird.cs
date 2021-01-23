@@ -20,9 +20,10 @@ namespace Flappy_Bird_Rewrite
         private SpriteFont _arial;
 
         private Texture2D _playerTexture;
-        private Player _player;
+        public static Player Player;
 
         private bool _canSpawn;
+        private bool _canSpawnGround;
 
         public FlappyBird()
         {
@@ -59,8 +60,8 @@ namespace Flappy_Bird_Rewrite
 
             _playerTexture = Content.Load<Texture2D>("Sprites/flappybird");
             //_player = new Player(new Vector2(100, 100), _playerTexture, 0.25f);
-            _player = new Player(new Vector2(100, 100), _playerTexture, 0.25f);
-            EntityManager.AddEntity(_player);
+            Player = new Player(new Vector2(100, 100), _playerTexture, 0.2f);
+            EntityManager.AddEntity(Player);
 
             PipeManager.GeneratePipe(1280);
 
@@ -75,17 +76,27 @@ namespace Flappy_Bird_Rewrite
 
             EntityManager.UpdateEntities(gameTime); // Update all the entities
 
-            Camera.Position.X = _player.Position.X - 100; // Set the camera's position to be the players position - 100 (making it appear on the left)
+            Camera.Position.X = Player.Position.X - 100; // Set the camera's position to be the players position - 100 (making it appear on the left)
             
-            if ((int) _player.Position.X % 500 <= 10) // Spawn a pipe if the player's X coord is within this range.
+            if ((int) Player.Position.X % 500 <= 10) // Spawn a pipe if the player's X coord is within this range.
             {
                 if (_canSpawn) // This prevents multiple pipes from spawning, as the value is under 10 for a few frames.
                 {
                     _canSpawn = false;
-                    PipeManager.GeneratePipe(1280 + _player.Position.X);
+                    PipeManager.GeneratePipe(1280 + Player.Position.X);
                 }
             }
             else _canSpawn = true;
+            
+            if ((int) Player.Position.X % 132 <= 10) // Spawn a pipe if the player's X coord is within this range.
+            {
+                if (_canSpawnGround) // This prevents multiple pipes from spawning, as the value is under 10 for a few frames.
+                {
+                    _canSpawnGround = false;
+                    EntityManager.AddEntity(new Ground(new Vector2(1280 + Player.Position.X, 800), Content.Load<Texture2D>("Backgrounds/grass"), 2, false));
+                }
+            }
+            else _canSpawnGround = true;
 
             base.Update(gameTime);
         }
@@ -94,7 +105,7 @@ namespace Flappy_Bird_Rewrite
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            _spriteBatch.Begin(transformMatrix: Camera.GetViewMatrix());
+            _spriteBatch.Begin(transformMatrix: Camera.GetViewMatrix(), sortMode: SpriteSortMode.FrontToBack, samplerState: SamplerState.PointClamp);
             
             EntityManager.DrawEntities(_spriteBatch);
             _spriteBatch.DrawString(_arial, Debug.DebugText, new Vector2(0, 0), Color.White, 0, Vector2.Zero, 1, SpriteEffects.None, 0);

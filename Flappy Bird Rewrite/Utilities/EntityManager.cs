@@ -17,8 +17,6 @@ namespace Flappy_Bird_Rewrite.Utilities
         
         public static void UpdateEntities(GameTime gameTime)
         {
-            Console.WriteLine(_baseEntities.Count);
-            
             _isUpdating = true;
             foreach (BaseEntity baseEntity in _baseEntities) // Update all the entities in the list.
             {
@@ -57,6 +55,15 @@ namespace Flappy_Bird_Rewrite.Utilities
         {
             if (!_isUpdating) _baseEntities.Remove(baseEntity);
             else _removedEntities.Add(baseEntity);
+        }
+
+        public static void DestroyAllOfType(Type type)
+        {
+            foreach (BaseEntity baseEntity in _baseEntities)
+            {
+                Console.WriteLine(baseEntity.GetType());
+                if (baseEntity.GetType() == type) DestroyEntity(baseEntity);
+            }
         }
 
         public static bool IsEntityColliding(BaseEntity a, BaseEntity b) // Checks to see if the entities are intersecting. If they aren't don't bother with the heavy math.

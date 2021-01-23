@@ -23,7 +23,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Backgrounds/grass pixel].png
+/build:Backgrounds/grass pixel].png;Backgrounds/grass.png
 
 #begin Fonts/Arial-24px.spritefont
 /importer:FontDescriptionImporter
